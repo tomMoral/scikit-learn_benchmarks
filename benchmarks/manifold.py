@@ -22,7 +22,7 @@ class TSNE_bench(Benchmark, Estimator):
 
         data = _digits_dataset(n_samples=n_samples)
 
-        estimator = TSNE(random_state=0, method=method, n_jobs=n_jobs, verbose=1)
+        estimator = TSNE(random_state=0, method=method, n_jobs=n_jobs)
 
         return data, estimator
 
